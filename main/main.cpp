@@ -7,7 +7,7 @@ int main()
    short m = 0, d = 0; //month, day
    setlocale(0, "");
 
-   printf_s("¬‚Â‰ËÚÂ m, d: ");
+   printf_s("√Ç√¢√•√§√®√≤√• m, d: ");
    scanf_s("%d %d", &m, &d);
 
    switch (d) {
@@ -16,7 +16,7 @@ int main()
    case 30:
       printf_s(m == 4 || m == 6 || m == 9 || m == 11 ? "day: 1, month: %d" : "day: %d, month: %d", m, d + 1, m);
    default:
-      printf_s("hui");
+      printf_s("");
 
    }
 
