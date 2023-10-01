@@ -16,7 +16,7 @@ int main()
       case 30:
          printf_s(m == 4 || m == 6 || m == 9 || m == 11 ? "day: 1, month: %d" : "day: %d, month: %d", m, d + 1, m);
       default:
-         printf_s("");
+         printf_s("hui");
 
    }
 
