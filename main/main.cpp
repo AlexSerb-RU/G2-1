@@ -10,7 +10,8 @@ int main()
    printf_s("Введите m, d: ");
    scanf_s("%d %d", &m, &d);
 
-   switch (d) {
+   switch (d)
+   {
    case 28:
       printf_s(m == 2 ? "day: 1, month: 3" : "day: 29, month: %d", d);
       break;
