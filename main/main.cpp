@@ -4,34 +4,30 @@
 
 int main()
 {
-   short m = 0, d = 0; //month, day
+   short M = 0, D = 0; //месяц, день
    setlocale(0, "");
-
-   printf_s("Введите m, d: ");
-   scanf_s("%d %d", &m, &d);
-
-   switch (d)
+   printf_s("Введите M, D: ");
+   scanf_s("%d %d", &M, &D);
+   switch (D)
    {
    case 28:
-      printf_s(m == 2 ? "day: 1, month: 3" : "day: 29, month: %d", d);
+      printf_s(M == 2 ? "День: 1, месяц: 3" : "День: 29, месяц: %d", D);
       break;
    case 30:
-      if (m == 4 || m == 6 || m == 9 || m == 11)
+      if (M == 4 || M == 6 || M == 9 || M == 11)
       {
-         m++;
-         d = 1;
+         M++;
+         D = 1;
       }
       else
-         d++;
-      
-      printf_s("day: %d, month: %d", d, m);
+         D++;
+      printf_s("День: %d, месяц: %d", D, M);
       break;
    case 31:
-      printf_s(m != 12 ? "day: 1, month: %d" : "day: 1, month: 1", m + 1);
+      printf_s(M != 12 ? "День: 1, месяц: %d" : "День: 1, месяц: 1", M + 1);
       break;
    default:
-      printf_s("day: %d, month: %d", d + 1, m);
+      printf_s("День: %d, месяц: %d", D + 1, M);
    }
-
    return 0 * _getch();
 }
