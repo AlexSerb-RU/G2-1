@@ -4,7 +4,7 @@
 
 int main()
 {
-   short D = 0, M = 0; //день, месяц
+   short D = 0, M = 0; //день, месяцх
    setlocale(0, "");
    printf_s("Введите D, M: ");
    scanf_s("%d %d", &D, &M);
