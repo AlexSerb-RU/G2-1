@@ -4,10 +4,10 @@
 
 int main()
 {
-   short M = 0, D = 0; //месяц, день
+   short D = 0, M = 0; //день, месяц
    setlocale(0, "");
-   printf_s("Введите M, D: ");
-   scanf_s("%d %d", &M, &D);
+   printf_s("Введите D, M: ");
+   scanf_s("%d %d", &D, &M);
    switch (D)
    {
    case 28:
