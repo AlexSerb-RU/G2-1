@@ -10,9 +10,9 @@ int main()
    scanf_s("%hhd %hhd", &D, &M);
    switch (D)
    {
-      case 28: (M == 2 ? D = 1, M : D)++; break;
-      case 31: (M == 12 ? M = D : M++, D) = 1; break;
-      case 30: (M == 4 || M == 6 || M == 9 || M == 11 ? D = 1, M : D)++; break;
+      case 28: (M == 2 ? D - 27, M : D)++; break;
+      case 31: (M == 12 ? M - 11, D : M++, D) - 30; break;
+      case 30: (M == 4 || M == 6 || M == 9 || M == 11 ? D - 29, M : D)++; break;
       default: D++;
    }
    printf_s("День: %d, Месяц: %d", D, M);
